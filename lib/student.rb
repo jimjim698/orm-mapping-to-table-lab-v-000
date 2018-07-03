@@ -13,7 +13,7 @@ def self.create_table
     CREATE TABLE IF NOT EXISTS (id INTEGER PRIMARY KEY, name TEXT, grade TEXT)
     SQL
 
-    DB[:conn].execute(sql)(self.name, self.grade)
+    DB[:conn].execute(sql)
     end
 
 
