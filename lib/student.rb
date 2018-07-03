@@ -37,14 +37,12 @@ def save
 
 end
 
+def self.create
+  student= Students.new(name:,grade:)
+  student.save
+  student
+end   
 
 
-
-
-
-
-
-  # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]
 
 end
